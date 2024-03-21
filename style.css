@@ -43,3 +43,44 @@ a:hover {
 	- 640px
 	- 1000px
 */
+.menu ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  text-align: center;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 640px) {
+  .menu li {
+    display: inline-block;
+    width: 24%;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hlavicka {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li {
+    display: inline-block;
+    min-width: fit-content;
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  .logo {
+    margin-bottom: 0;
+    height: 3rem;
+    line-height: 3rem;
+  }
+}

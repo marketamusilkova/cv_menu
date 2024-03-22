@@ -43,7 +43,8 @@ a:hover {
 	- 640px
 	- 1000px
 */
-.menu ul {
+/* MOJE PRVNÍ ŘEŠENÍ
+ .menu ul {
   list-style-type: none;
   padding-inline-start: 0;
   text-align: center;
@@ -82,5 +83,45 @@ li {
     margin-bottom: 0;
     height: 3rem;
     line-height: 3rem;
+  }
+} */
+
+.hlavicka {
+   display: flex;
+   flex-direction: column;
+}
+.menu {
+  display: flex;
+}
+.logo {
+  margin-bottom: 20px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+li {
+  list-style: none;
+  margin: 1px;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 640px) {
+  ul {
+    display: flex;
+  }
+  li {
+    width:25%;
+  }
+}
+@media (min-width: 1000px) {
+  .hlavicka {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 0;
   }
 }
